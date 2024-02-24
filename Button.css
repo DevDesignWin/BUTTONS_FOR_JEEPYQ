@@ -1,0 +1,48 @@
+.button{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    border-radius: 20%;
+    padding: 0
+    ${(props) =>
+    props.size === "sm"
+    ? "1.1rem"
+    :props.size === "md"
+    ? "1.4rem"
+    :props.size === "lg"
+    ? "1.6rem"
+    :"1.1rem"};
+    height : ${(props) =>
+    props.size === "sm"
+    ? "34px"
+    :props.size === "md"
+    ? "37px"
+    :props.size === "lg"
+    ? "40px"
+    :"34px" };
+    flex-wrap: wrap;
+    font-weight: 500;
+    border: 1px solid transparent;
+    background-color : ${(props) =>
+       props.variant === "W"
+        ? "#93E9BE"
+    : "f8f9fa"};
+variant ="W"
+}
+
+.container {
+    display : hidden;
+}
+.card{
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+}
+.hide {
+    display : hidden;
+}
